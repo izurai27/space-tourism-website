@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import Header from './components/header';
+import Home from './components/home';
+import MobileMenu from './components/mobileMenu';
+import GlobalCSS from './global.css';
+import Destination from './components/destination';
+import Crew from './components/crew';
+import Tech from './components/technology'
+import {Routes,Route } from "react-router-dom"
+import data from './assets/data.json'
+
 
 function App() {
+  const [openMenu, setOpenMenu] = useState(false)
+
+  const handleMenu = () => {
+    setOpenMenu(!openMenu)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <GlobalCSS/>
+    <Header handleMenu = {handleMenu}/>
+    {openMenu && <MobileMenu handleMenu = {handleMenu}/>}
+    
+    <Routes>
+      <Route path='/' exact element={<Home/>}/>
+      <Route path='/destination' element={<Destination data={data.destinations}/>}/>
+      <Route path='/crew' element={<Crew data={data.crew}/>}/>
+      <Route path='/technology' element={<Tech data={data.technology}/>}/>
+   </Routes>
+    </>
   );
 }
 
