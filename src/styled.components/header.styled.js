@@ -20,9 +20,13 @@ const HeaderStyled = styled.header`
   }
 
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width:768px) {
     .logo{
       height:calc(48/16*1rem);
+    }
+
+    .menu{
+      display:none;
     }
 
   }
@@ -34,9 +38,7 @@ const HeaderStyled = styled.header`
     justify-content: flex-start;
     column-gap: calc(64/16*1rem);
 
-    .menu{
-      display:none;
-    }
+    
     .line{
       display:block;
       width:calc(473/1440*100vw);

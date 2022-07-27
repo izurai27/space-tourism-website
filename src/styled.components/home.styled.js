@@ -14,12 +14,13 @@ const HomeStyled = styled.main`
   justify-content: space-between;
   box-sizing: border-box;
   row-gap : calc(81/16*1rem);
+  padding-inline:calc(24/375*100vw);
 
   .container{
     display:flex;
     flex-direction: column;
     row-gap: 1rem;
-    width: calc(327/375*100%);
+    max-width: calc(327/16*1rem);
    
   }
 
@@ -38,8 +39,8 @@ const HomeStyled = styled.main`
 
     .container{
       row-gap: calc(24/16*1rem);
-      width: calc(450/768*100%);
-     
+      max-width: calc(450/768*100%);
+      
     }
 
     @media only screen and (min-width: 1440px){
@@ -51,7 +52,7 @@ const HomeStyled = styled.main`
       .container{
         align-items: flex-start;
         row-gap: calc(24/16*1rem);
-        width: calc(445/1440*100vw);
+        max-width: calc(445/1440*100vw);
         text-align: left;
       }
 
