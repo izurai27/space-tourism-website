@@ -14,7 +14,7 @@ const Crew = (props) => {
 
   return (
     <CrewStyled>
-      <h5>02 meet your crew</h5>
+      <div className='h5heading'><span className='numberDark'>02</span><h5>meet your crew</h5></div>
       {props.data.filter((el,index) => index === stateIndex).map((element,index) => {
         return (
           <div className="crew" key={index}>

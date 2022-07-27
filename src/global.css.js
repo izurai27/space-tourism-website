@@ -90,8 +90,9 @@ h1{
 
 h2{
 	font-family: 'Bellefair', serif;
-	font-size: calc(100/16*1rem);
+	font-size: calc(56/16*1rem);
 	text-transform: uppercase;
+	line-height: 64px;
 }
 
 h3{
@@ -160,6 +161,22 @@ p{
 	/* transform: scale(1.5); */
 }
 
+	.numberDark{
+		font-family: 'Barlow Condensed';
+		font-style: normal;
+		font-weight: 700;
+		font-size: calc(16/16*1rem);
+		line-height: 19px;
+		letter-spacing: 2.7px;
+		opacity: 0.25;
+	}
+
+	.h5heading{
+		width:100%;
+		display:flex;
+		column-gap: calc(18/16*1rem);
+		align-items: center;
+	}
 
 
 @media only screen and (min-width:768px){
@@ -196,6 +213,27 @@ p{
 	}
 
 
+	.h5heading{
+		display:flex;
+		column-gap: calc(18/16*1rem);
+		padding-inline: calc(38.5/16*1rem);
+		align-items: flex-start;
+		box-sizing: border-box;
+	}
+
+	.numberDark{
+		
+		font-size: calc(20/16*1rem);
+		line-height: 24px;
+		letter-spacing: 3.375px;
+		opacity: 0.25;
+	}
+
+	h2{
+		font-family: 'Bellefair';
+		font-size: calc(80/16*1rem);;
+		line-height: 92px;
+	}
 }
 
 @media only screen and (min-width:1440px){

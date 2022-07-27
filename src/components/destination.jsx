@@ -14,7 +14,7 @@ const Destination = (props) => {
 
   return (
     <DestinationStyled>
-      <h5><span>01</span>PICK YOUR DESTINATION</h5>
+      <div className='h5heading'><span className='numberDark'>01</span><h5>PICK YOUR DESTINATION</h5></div>
     {props.data.filter(el => el.name === viewDest).map((element,index) => {
       
       return(
@@ -26,11 +26,11 @@ const Destination = (props) => {
           <p className='desc'>{element.description}</p>
           
           <div className="info">
-            <div>
+            <div className='subheading'>
               <p className='subheading2'>AVG.DISTANCE</p>
               <p className='subheading1'>{element.distance}</p>
             </div>
-            <div>
+            <div  className='subheading'>
               <p className='subheading2'>EST.TRAVEL TIME</p>
               <p className='subheading1'>{element.travel}</p>
             </div>

@@ -12,9 +12,9 @@ const DestinationNavStyled = styled.nav`
   font-family: 'Barlow Condensed';
   font-size: calc(14/16*1rem);
   line-height: 17px;
-/* identical to box height */
+  /* identical to box height */
 
-letter-spacing: 2.3625px;
+  letter-spacing: 2.3625px;
 
   
   .active{
@@ -32,6 +32,14 @@ letter-spacing: 2.3625px;
     position:absolute;
     bottom:-8px;
   }
+
+@media only screen and (min-width:768px){
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+
+}
+
 `
 
 const DestinationNav = (props) => {

@@ -15,7 +15,8 @@ const Tech = (props) => {
 
   return (
     <TechStyled>
-      <h5><span>03</span>SPACE LAUNCH 101</h5>
+      <div className='h5heading'><span className='numberDark'>03</span><h5>SPACE LAUNCH 101</h5></div>
+      
       {props.data.filter((el,index) => index === stateIndex).map((element,index) => {
         return(
           <div className="tech">
