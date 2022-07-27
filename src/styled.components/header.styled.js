@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderStyled = styled.header`
+const HeaderStyled = styled.header`
   display:flex;
   justify-content: space-between;
   align-items: center;
@@ -11,9 +11,44 @@ export const HeaderStyled = styled.header`
   box-sizing: border-box;
   overflow-x: hidden;
   
+  .line{
+    display:none;
+  }
 
   .logo{
     height:calc(40/16*1rem);
   }
 
+
+  @media screen and (min-width:1440px) {
+    .logo{
+      height:calc(48/16*1rem);
+    }
+
+  }
+
+
+  @media screen and (min-width:1440px) {
+    padding: calc(64/16*1rem);
+    height:fit-content;
+    justify-content: flex-start;
+    column-gap: calc(64/16*1rem);
+
+    .menu{
+      display:none;
+    }
+    .line{
+      display:block;
+      width:calc(473/1440*100vw);
+      height:1px;
+      background-color: hsla(0, 0%, 100%, 1);
+      border:none;
+      margin:0;
+    }
+
+   
+  }
+
 `
+
+export default HeaderStyled

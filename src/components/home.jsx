@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomeStyled } from '../styled.components/home.styled'
+import  HomeStyled  from '../styled.components/home.styled'
 // import data from '../data.json'
 
 const Home = () => {

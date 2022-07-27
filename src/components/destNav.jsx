@@ -37,7 +37,7 @@ letter-spacing: 2.3625px;
 const DestinationNav = (props) => {
   const handleClick = (e) => {
     const activeEl = document.querySelector('.active')
-    // console.log(activeEl)
+    
     const select = e.target
 
     activeEl.classList.toggle('active')

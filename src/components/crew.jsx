@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { CrewStyled } from '../styled.components/crew.styled'
+import  CrewStyled  from '../styled.components/crew.styled'
 import CrewNav from './crewNav'
 
 const Crew = (props) => {
@@ -9,7 +9,7 @@ const Crew = (props) => {
   const handleClick = (e) => {
     
     setStateIndex(parseInt(e.target.dataset.index))
-   console.log(typeof(e.target.dataset.index))
+  
   }
 
   return (

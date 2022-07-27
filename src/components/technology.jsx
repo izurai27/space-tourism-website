@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { TechStyled } from '../styled.components/techs.styled'
+import  TechStyled  from '../styled.components/techs.styled'
 // import data from '../assets/data.json'
 import TechNav from './techNav'
 
@@ -10,7 +10,7 @@ const Tech = (props) => {
   const handleClick = (e) => {
     
     setStateIndex(parseInt(e.target.dataset.index))
-    console.log(typeof(e.target.dataset.index))
+    
   }
 
   return (
@@ -20,7 +20,7 @@ const Tech = (props) => {
         return(
           <div className="tech">
             <picture>
-              <source media="(min-width: 1440px)" srcset={element.images.portrait}/>
+              <source media="(min-width: 1440px)" srcSet={element.images.portrait}/>
               <img src={element.images.landscape} alt={element.name}></img>
             </picture>
             <TechNav handleClick = {handleClick}/>

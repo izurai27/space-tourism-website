@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const NavbarStyled = styled.div`
+const NavbarStyled = styled.div`
 
   text-decoration:none;
   color:white;
@@ -9,3 +9,5 @@ export const NavbarStyled = styled.div`
  
 
 `
+
+export default NavbarStyled

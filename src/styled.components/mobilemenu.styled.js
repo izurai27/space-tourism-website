@@ -42,6 +42,7 @@ export const MobileMenuStyled = styled.nav`
     font-weight: 400;
     line-height: 19px;
     text-decoration:none;
+    letter-spacing: 2.7px;
     color:white;
   }
 
@@ -51,4 +52,42 @@ export const MobileMenuStyled = styled.nav`
     letter-spacing: 2.7px;
   }
 
+  @media only screen and (min-width : 768px){
+    height:fit-content;
+    padding:calc(39/16*1rem) calc(48/16*1rem) calc(39/16*1rem) calc(48/16*1rem);
+    justify-content: center;
+    padding-inline:3rem;
+    width:fit-content;
+
+    img{
+      display:none;
+    }
+    .number{
+      display:none;
+    }
+
+    ul{
+      display:flex;
+      align-items: center;
+      column-gap:calc(37/16*1rem)
+    }
+  }
+
+  @media only screen and (min-width : 1440px){
+    padding:calc(39/16*1rem) calc(165/16*1rem) calc(38/16*1rem) calc(123/16*1rem);
+    margin-top:calc(40/16*1rem);    
+
+    .number{
+      display:block;
+    }
+
+    ul{
+            column-gap:calc(48/16*1rem)
+    }
+
+  }
+
+
 `
+
+export default MobileMenuStyled

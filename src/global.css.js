@@ -163,10 +163,42 @@ p{
 
 
 @media only screen and (min-width:768px){
-	
+	nav{
+		font-family: 'Barlow Condensed', sans-serif;
+		font-size: calc(14/16*1rem);
+		letter-spacing: 2.36px;
+		line-height: 16.8px;
+	}
+
+	p{
+		font-size: calc(16/16*1rem);
+		font-family: 'Barlow', sans-serif;
+		line-height: calc(28/16*1rem);
+		color: hsla(231, 79%, 90%, 1);
+	}
+
+	h1{
+		font-family: 'Bellefair', serif;
+		font-size: calc(150/16*1rem);
+
+	}
+
+	h5{
+		font-family: 'Barlow Condensed', sans-serif;
+		font-size: calc(20/16*1rem);
+		letter-spacing: calc(3.38/16*1rem);
+		line-height: calc(24/16*1rem);
+	}
+
+	.btnExplore{
+		font-size:calc(32/16*1rem);
+		width:calc(242/16*1rem);
+	}
+
+
 }
 
-@media only screen and (min-width:1440){
+@media only screen and (min-width:1440px){
 	h1{
 		font-family: 'Bellefair', serif;
 		font-size: calc(150/16*1rem);
@@ -192,22 +224,27 @@ p{
 	h5{
 		font-family: 'Barlow Condensed', sans-serif;
 		font-size: calc(28/16*1rem);
-		letter-spacing: 4.75em;
+		letter-spacing: 4.75px;
 	}
 
 	nav{
 		font-family: 'Barlow Condensed', sans-serif;
 		font-size: calc(16/16*1rem);
-		/* letter-spacing: 2.7em; */
+		line-height: 19px;
+		letter-spacing: 2.7px;
+
 	}
 
-p{
-	font-size: calc(15/16*1rem);
-	font-family: 'Barlow', sans-serif;
-	line-height: calc(25/15*100%);
-	color: hsla(231, 79%, 90%, 1);
+	p{
+		font-size: calc(18/16*1rem);
+		line-height: 2rem;
+	}
 
-}
-}
+	.btnExplore{
+			font-size:calc(32/16*1rem);
+			width:calc(274/16*1rem);
+		}
+
+	}
 
 `

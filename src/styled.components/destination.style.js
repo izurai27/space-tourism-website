@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import bgImg from '../assets/destination/background-destination-mobile.jpg'
 
-export const DestinationStyled = styled.main`
+const DestinationStyled = styled.main`
   background-image:url(${bgImg});
   display:flex;
   flex-direction: column;
@@ -36,3 +36,5 @@ export const DestinationStyled = styled.main`
     border-top:1px solid #383B4B;
   }
 `
+
+export default DestinationStyled 

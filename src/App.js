@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/header';
 import Home from './components/home';
@@ -14,6 +14,19 @@ import data from './assets/data.json'
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false)
+  // const [size, setSize] = useState(false)
+  const minWidth = 768
+  
+
+  useEffect(() => {
+    if (window.screen.width >= minWidth){
+      setOpenMenu(true)
+    } else {
+      setOpenMenu(false)
+    }
+    
+  },[])
+
 
   const handleMenu = () => {
     setOpenMenu(!openMenu)

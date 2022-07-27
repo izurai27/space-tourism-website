@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
-import { DestinationStyled } from '../styled.components/destination.style'
+import  DestinationStyled  from '../styled.components/destination.style'
 import DestinationNav from './destNav'
 // import data from '../data.json'
 
 const Destination = (props) => {
-  console.log(props.data)
-
+ 
   const [viewDest,setViewDest] = useState('Moon');
 
   const handleView = (e) => {

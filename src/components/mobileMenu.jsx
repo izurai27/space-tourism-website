@@ -1,12 +1,12 @@
 import React from 'react'
 import close from '../assets/shared/icon-close.svg'
-import { MobileMenuStyled } from '../styled.components/mobilemenu.styled'
+import  MobileMenuStyled  from '../styled.components/mobilemenu.styled'
 import { Link } from "react-router-dom";
 
 
 
 const MobileMenu = (props) => {
-  console.log(props)
+  
   return (
     <MobileMenuStyled>
        <img src={close} alt="close icon" onClick = {props.handleMenu} />
