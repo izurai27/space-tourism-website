@@ -2,25 +2,42 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-const DestinationNavStyled = styled.ul`
-  color:blue;
+const DestinationNavStyled = styled.nav`
+  color:white;
+  display:flex;
+  column-gap: calc(27/16*1rem);
+  text-transform: uppercase;
+  /* margin-bottom: 20px; */
+  /* margin-top: 26px; */
+  font-family: 'Barlow Condensed';
+  font-size: calc(14/16*1rem);
+  line-height: 17px;
+/* identical to box height */
 
+letter-spacing: 2.3625px;
+
+  
   .active{
-    color:red;
     position:relative;
+    display:flex;
+    justify-content: center;
   }
 
   .active::after{
     content:'';
     width:100%;
     position:absolute;
+    height: 3px;
+    background-color:white;
+    position:absolute;
+    bottom:-8px;
   }
 `
 
 const DestinationNav = (props) => {
   const handleClick = (e) => {
     const activeEl = document.querySelector('.active')
-    console.log(activeEl)
+    // console.log(activeEl)
     const select = e.target
 
     activeEl.classList.toggle('active')
@@ -32,10 +49,10 @@ const DestinationNav = (props) => {
   return (
     
       <DestinationNavStyled> 
-        <li className='active' onClick={handleClick}>Moon</li>
-        <li className='' onClick={handleClick}>Mars</li>
-        <li className='' onClick={handleClick}>Europa</li>
-        <li className='' onClick={handleClick}>Titan</li>
+        <span className='active' onClick={handleClick}>Moon</span>
+        <span className='' onClick={handleClick}>Mars</span>
+        <span className='' onClick={handleClick}>Europa</span>
+        <span className='' onClick={handleClick}>Titan</span>
 
       </DestinationNavStyled>
     

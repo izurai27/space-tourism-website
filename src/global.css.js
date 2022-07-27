@@ -33,7 +33,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 
@@ -91,6 +91,7 @@ h1{
 h2{
 	font-family: 'Bellefair', serif;
 	font-size: calc(100/16*1rem);
+	text-transform: uppercase;
 }
 
 h3{
@@ -105,8 +106,9 @@ h4{
 
 h5{
 	font-family: 'Barlow Condensed', sans-serif;
-	font-size: calc(28/16*1rem);
-	letter-spacing: 4.75em;
+	font-size: calc(16/16*1rem);
+	letter-spacing: 2.7px;
+	text-transform: uppercase;
 }
 
 nav{
@@ -161,13 +163,20 @@ p{
 
 
 @media only screen and (min-width:768px){
+	
+}
+
+@media only screen and (min-width:1440){
 	h1{
 		font-family: 'Bellefair', serif;
-		font-size: calc(80/16*1rem);
+		font-size: calc(150/16*1rem);
+
 	}
+
 	h2{
 		font-family: 'Bellefair', serif;
 		font-size: calc(100/16*1rem);
+		text-transform: uppercase;
 	}
 
 	h3{
@@ -192,10 +201,13 @@ p{
 		/* letter-spacing: 2.7em; */
 	}
 
-	p{
-		font-size: calc(15/16*1rem);
-		font-family: 'Barlow Condensed', sans-serif;
-	}
+p{
+	font-size: calc(15/16*1rem);
+	font-family: 'Barlow', sans-serif;
+	line-height: calc(25/15*100%);
+	color: hsla(231, 79%, 90%, 1);
+
+}
 }
 
 `

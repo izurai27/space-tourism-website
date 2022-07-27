@@ -9,29 +9,33 @@ const Destination = (props) => {
   const [viewDest,setViewDest] = useState('Moon');
 
   const handleView = (e) => {
-    console.log(e.target.innerHTML)
+  
     setViewDest(e.target.innerHTML)
   }
 
   return (
     <DestinationStyled>
-      <div><span>01</span>PICK YOUR DESTINATION</div>
+      <h5><span>01</span>PICK YOUR DESTINATION</h5>
     {props.data.filter(el => el.name === viewDest).map((element,index) => {
       
       return(
-        <div key={index}>
+        <div key={index} className='destDetail'>
           <img src={element.images.png} alt="" />
-          {/* <ul>
-            <li>MOON</li>
-            <li>MARS</li>
-            <li>EUROPA</li>
-            <li>TITAN</li>
-          </ul> */}
+          
           <DestinationNav handleView = {handleView}/>
-          <h1>{element.name}</h1>
-          <p>{element.description}</p>
-          <p>AVG.DISTANCE<span>{element.distance}</span></p>
-          <p>EST.TRAVEL TIME<span>{element.travel}</span></p>
+          <h2>{element.name}</h2>
+          <p className='desc'>{element.description}</p>
+          
+          <div className="info">
+            <div>
+              <p className='subheading2'>AVG.DISTANCE</p>
+              <p className='subheading1'>{element.distance}</p>
+            </div>
+            <div>
+              <p className='subheading2'>EST.TRAVEL TIME</p>
+              <p className='subheading1'>{element.travel}</p>
+            </div>
+          </div>
 
         </div>
       )
