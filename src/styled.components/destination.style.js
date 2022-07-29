@@ -3,11 +3,12 @@ import bgImg from '../assets/destination/background-destination-mobile.jpg'
 
 const DestinationStyled = styled.main`
   background-image:url(${bgImg});
+  background-repeat: no-repeat;
   display:flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2rem;
-  padding-top:100px;
+  /* row-gap: 2rem; */
+  /* padding-top:100px; */
 
   .destDetail{
     display:flex;
@@ -75,7 +76,7 @@ const DestinationStyled = styled.main`
 
   @media only screen and (min-width:768px){
     background-image: url('./assets/destination/background-destination-tablet.jpg');
-    padding-top:calc(136/16*1rem);
+    
   
     img{
       width:calc(300/16*1rem);
@@ -93,6 +94,62 @@ const DestinationStyled = styled.main`
       
     }
   
+  }
+
+  @media only screen and (min-width:1440px){
+    
+
+    .destDetail{
+      display:grid;
+      grid-template-areas: 'image nav'
+                            'image head2'
+                            'image desc'
+                            'image info';
+      
+      width:100vw;
+      justify-content: space-evenly;
+
+      
+
+    }
+
+    nav{
+        grid-area:nav;
+      }
+
+    img{
+      grid-area: image;
+      width:calc(445/16*1rem);
+    }
+
+    h2{
+      grid-area:head2;
+
+    }
+
+    .desc{
+      grid-area:desc;
+    }
+
+    .info{
+      grid-area:info;
+      width:calc(444/16*1rem);
+      justify-content: flex-start;
+      
+      
+      
+    }
+
+    p.subheading2, p.subheading1{
+      text-align:left;
+      margin-right:calc(79/16*1rem);
+    }
+
+    p.desc{
+      width:calc(444/16*1rem);
+      text-align: left;
+    }
+
   }
 `
 

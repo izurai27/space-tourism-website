@@ -49,6 +49,11 @@ body {
 
 main{
 	min-height: 100vh;
+	display:flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	background-size: cover;
+	padding-top:calc(88/16*1rem);
 }
 
 ol, ul {
@@ -97,12 +102,20 @@ h2{
 
 h3{
 	font-family: 'Bellefair', serif;
-	font-size: calc(56/16*1rem);
+	font-size: calc(24/16*1rem);
+	line-height: 28px;
+	/* identical to box height */
+
+	text-align: center;
+	text-transform: uppercase;
 }
 
 h4{
 	font-family: 'Bellefair', serif;
-	font-size: calc(32/16*1rem);
+	font-size: calc(16/16*1rem);
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 h5{
@@ -175,7 +188,9 @@ p{
 		width:100%;
 		display:flex;
 		column-gap: calc(18/16*1rem);
-		align-items: center;
+		justify-content: center;
+		height:fit-content;
+		margin-bottom:2rem;
 	}
 
 
@@ -200,6 +215,25 @@ p{
 
 	}
 
+	h3{
+		/* font-family: 'Bellefair', serif;*/
+		font-size: calc(40/16*1rem);
+		line-height: 45.84px;
+		/* identical to box height */
+
+		/* text-align: center;
+		text-transform: uppercase;  */
+
+	}
+
+	h4{
+		/* font-family: 'Bellefair', serif;*/
+		font-size: calc(24/16*1rem);
+		line-height: 27.5px;
+		/*text-align: center;
+		text-transform: uppercase;*/
+	} 
+
 	h5{
 		font-family: 'Barlow Condensed', sans-serif;
 		font-size: calc(20/16*1rem);
@@ -217,8 +251,9 @@ p{
 		display:flex;
 		column-gap: calc(18/16*1rem);
 		padding-inline: calc(38.5/16*1rem);
-		align-items: flex-start;
+		justify-content: flex-start;
 		box-sizing: border-box;
+		margin-bottom:calc(60/16*1rem);
 	}
 
 	.numberDark{
@@ -234,6 +269,11 @@ p{
 		font-size: calc(80/16*1rem);;
 		line-height: 92px;
 	}
+
+	main{
+		padding-top:calc(136/16*1rem);
+	}
+
 }
 
 @media only screen and (min-width:1440px){
@@ -265,6 +305,11 @@ p{
 		letter-spacing: 4.75px;
 	}
 
+	.h5heading{
+		margin-bottom:calc(64/16*1rem);
+		
+	}
+
 	nav{
 		font-family: 'Barlow Condensed', sans-serif;
 		font-size: calc(16/16*1rem);
@@ -281,8 +326,14 @@ p{
 	.btnExplore{
 			font-size:calc(32/16*1rem);
 			width:calc(274/16*1rem);
-		}
-
 	}
+
+	main{
+		padding-top:calc(212/16*1rem);
+	}
+	
+	
+}
+
 
 `

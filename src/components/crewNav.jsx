@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CrewNavStyled = styled.nav`
- 
+  margin-top:24px;
+  margin-bottom:24px;
   display:flex;
   justify-content: space-between;
   column-gap: 1rem;
@@ -15,6 +16,7 @@ const CrewNavStyled = styled.nav`
     border-radius: 50%;
 
   }
+  
 `
 
 const CrewNav = (props) => {

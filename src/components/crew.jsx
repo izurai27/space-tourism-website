@@ -18,11 +18,16 @@ const Crew = (props) => {
       {props.data.filter((el,index) => index === stateIndex).map((element,index) => {
         return (
           <div className="crew" key={index}>
-            <img src={element.images.webp} alt={element.name} />
+            <div className="imgContainer">
+              <img src={element.images.webp} alt={element.name} />
+            </div>
             <CrewNav handleClick={handleClick}/>
-            <h4>{element.role}</h4>
-            <h3>{element.name}</h3>
-            <p>{element.bio}</p>
+            <div className="information">
+              <h4>{element.role}</h4>
+              <h3>{element.name}</h3>
+              <p>{element.bio}</p>
+            </div>
+            
           </div>
         )
       })}
