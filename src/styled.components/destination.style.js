@@ -97,7 +97,7 @@ const DestinationStyled = styled.main`
   }
 
   @media only screen and (min-width:1440px){
-    
+    background-image: url('./assets/destination/background-destination-desktop.jpg');
 
     .destDetail{
       display:grid;

@@ -16,7 +16,35 @@ const TechNavStyled = styled.nav`
     color:black;
     display:grid;
     place-items: center;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
 
+  }
+
+  @media only screen and (min-width:768px){
+    span{
+      width:60px;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  @media only screen and (min-width:1440px){
+    display:grid;
+    align-content: center;
+    row-gap:2rem;
+    
+
+    span{
+      width:80px;
+      font-size: 32px;
+      line-height: 37px;
+      letter-spacing: 2px;
+    }
+
+    
   }
 `
 

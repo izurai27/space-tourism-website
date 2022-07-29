@@ -37,7 +37,7 @@ const CrewStyled = styled.main`
   }
 
   @media only screen and (min-width:768px){
-   
+    background-image: url('./assets/crew/background-crew-tablet.jpg');
     padding-bottom:0;
     
     align-items: center;
@@ -81,7 +81,8 @@ const CrewStyled = styled.main`
     }
 
   @media only screen and (min-width:1440px){
-    
+    background-image: url('./assets/crew/background-crew-desktop.jpg');
+
     .crew{
       display:grid;
       grid-template-areas:  ' info image'
@@ -101,8 +102,7 @@ const CrewStyled = styled.main`
       /* width:calc(568/16*1rem); */
       border:none;
       width: fit-content;
-      overflow:visible;}
-        
+      overflow:visible;
     }
 
     img{
@@ -129,7 +129,7 @@ const CrewStyled = styled.main`
     nav{
         grid-area:nav;
     }
-
+  }
   
 `
 

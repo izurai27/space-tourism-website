@@ -25,9 +25,9 @@ const Tech = (props) => {
               <img src={element.images.landscape} alt={element.name}></img>
             </picture>
             <TechNav handleClick = {handleClick}/>
-            <p>THE TERMINOLOGY…</p>
+            <p className='terminology'>THE TERMINOLOGY…</p>
             <h3>{element.name}</h3>
-            <p>{element.description}</p>
+            <p className='description'>{element.description}</p>
 
           </div>
         )
