@@ -52,6 +52,17 @@ export const MobileMenuStyled = styled.nav`
     letter-spacing: 2.7px;
   }
 
+  
+
+  .active::after{
+    content:'';
+    height:31px;
+    width:4px;
+    background-color: white;
+    position:absolute;
+    right:0;
+  }
+
   @media only screen and (min-width : 768px){
     height:fit-content;
     padding:calc(39/16*1rem) calc(48/16*1rem) calc(39/16*1rem) calc(48/16*1rem);
@@ -70,6 +81,19 @@ export const MobileMenuStyled = styled.nav`
       display:flex;
       align-items: center;
       column-gap:calc(37/16*1rem)
+    }
+
+    li{
+      position:relative;
+    }
+
+    .active::after{
+      content:'';
+      height:3px;
+      width:100%;
+      background-color: white;
+      position:absolute;
+      bottom:calc(-38/16*1rem);
     }
   }
 
